@@ -1,19 +1,9 @@
 ---
-- name: Download and install the Arabic fonts
-  command: files/arabic-fonts.sh
-  args:
-    creates: /usr/share/fonts/arabic_fonts
-  when: arabic_fonts
-
-
 - name: Dev Repos
   copy: src={{item}} dest=/etc/yum.repos.d/
   with_items:
   - files/vscode.repo
 
-    #- name: Add elastic 6.x repo
-    #  copy: src=files/elastic5.repo dest=/etc/yum.repos.d/
-    #  when: development
 - name: Development packages
   dnf: 
     state: installed
@@ -48,7 +38,6 @@
       - vagrant
       - "@Development Tools"
       - "gcc-c++"
-       #- elasticsearch
   when: development
 
 - name: Disable gnome tracker

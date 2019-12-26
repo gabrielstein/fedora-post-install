@@ -1,7 +1,7 @@
 #!/bin/bash
 # sudo dnf list --installed python3-libselinux python3-dnf ansible &>/dev/null ||
 sudo dnf install -y  python3-dnf python3-libselinux ansible
-# sudo dnf list --installed rpmfusion* &>/dev/null || 
+sudo dnf list --installed rpmfusion* &>/dev/null || 
 sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 sudo dnf update -y
@@ -13,7 +13,7 @@ exit
 # dnf list --installed python-libselinux.x86_64 python-dnf.noarch ansible.noarch &>/dev/null || sudo dnf install -y python python-dnf libselinux-python ansible
 
 
-# sudo dnf  install https://prerelease.keybase.io/keybase_amd64.rpm
+sudo dnf  install https://prerelease.keybase.io/keybase_amd64.rpm
 #sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm # https://prerelease.keybase.io/keybase_amd64.rpm https://d11yldzmag5yn.cloudfront.net/prod/2.2.128200.0702/zoom_x86_64.rpm
 # run_keybase
 

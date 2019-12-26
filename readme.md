@@ -1,11 +1,11 @@
-# Fedora 28 post-installation
+# Fedora 31 post-installation
 
-Ansible playbook that runs post-fedora-28 workstation setup:
+Ansible playbook that runs post-fedora-31 workstation setup:
 
 * Installs ansible so we can run the rest of the script (and re-run) (in run.sh)
-* Enables dnf fast-mirror and increases parallel downloas.
+* Enables dnf fast-mirror and increases parallel downloads.
 * Makes your sudo password-less
-* Installes: htop, glances, vim-enahcned, powerline, unzip, java, java web plugin for firefox, gimp, inkscape, calc, jq, mosh, wine and other goodies
+* Installes: htop, glances, vim-enahcned, powerline, unzip, java, java web plugin for firefox, tmux
 * Enables some nice short cuts with git
 * Increases Bash history and adds timestamp
 * Reduces kernel swapiness (better performance)
@@ -16,9 +16,8 @@ Ansible playbook that runs post-fedora-28 workstation setup:
 * Enables playing mp3 and other multimedia codecs.
 * Configures gnome top par to show seconds and date
 * Disables default menu in gnome Terminal
-* Installs arabic fonts [optional defaults to yet]
 * Disables gnome tracker [optional defaults to no]
-* Installs additional development packages [optional defaults to no]
+* Installs additional development packages [optional defaults to yes]
 
 To run:
 
